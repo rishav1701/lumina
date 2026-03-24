@@ -1,0 +1,5 @@
+Drop your landscape photos into this folder.
+Supported formats: .jpg, .jpeg, .png, .webp
+
+After adding photos, register them in data.json
+or use the Admin Panel → Photos tab → Add Photo Entry.

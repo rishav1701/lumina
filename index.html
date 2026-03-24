@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMINA — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="lmCur"></div>
+<div id="lmRing"></div>
+<div class="notif" id="notif"></div>
+
+<!-- LOGIN -->
+<div class="lgate" id="lgate">
+  <div class="lbox">
+    <button class="lbox-close" id="lClose">✕</button>
+    <div class="lbox-title">Admin Access</div>
+    <div class="lbox-sub">Lumina Control Panel</div>
+    <input type="text"     id="lUser" placeholder="Username" autocomplete="off" spellcheck="false">
+    <input type="password" id="lPass" placeholder="Password" autocomplete="off">
+    <div class="lbox-err" id="lErr"></div>
+    <button class="lbox-btn" id="lBtn">Enter Dashboard</button>
+    <div class="lbox-hint">Type <strong>adm</strong> anywhere to open this.<br>Default: admin / lumina2025</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo" id="siteLogo">Lumi<em>na</em></div>
+  <ul class="nlinks" id="nlinks">
+    <li><a href="#gallery" class="on">Gallery</a></li>
+    <li><a href="#albums">Albums</a></li>
+    <li><a href="#about">About</a></li>
+    <span id="aWrap" style="display:none;align-items:center;gap:.6rem">
+      <button class="btn-admin" id="adminBtn">Admin Panel</button>
+      <button class="btn-logout" id="logoutBtn">Log out</button>
+    </span>
+  </ul>
+  <div class="nav-rule"></div>
+  <button class="hambg" id="hambg" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mobDrawer">
+  <div class="mob-drawer-top">
+    <div class="logo mob-logo" id="mobLogo">Lumi<em>na</em></div>
+    <button class="mob-close" id="mobClose" aria-label="Close menu">✕</button>
+  </div>
+  <nav class="mob-nav" id="mobNav">
+    <a href="#gallery" class="mob-link" data-i="01"><span>Gallery</span></a>
+    <a href="#albums"  class="mob-link" data-i="02"><span>Albums</span></a>
+    <a href="#about"   class="mob-link" data-i="03"><span>About</span></a>
+  </nav>
+  <p class="mob-tag" id="mobTag"></p>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="hero" id="hero">
+  <div class="track" id="track"></div>
+  <div class="sarr">
+    <button class="sarrow" id="sPrev">&#8592;</button>
+    <button class="sarrow" id="sNext">&#8594;</button>
+  </div>
+  <div class="snav" id="sdots"></div>
+  <div class="scnt" id="scnt"></div>
+  <!-- Vertical side text -->
+  <div class="hero-side">
+    <div class="hero-side-line"></div>
+    <span class="hero-side-txt">SCROLL TO EXPLORE</span>
+    <div class="hero-side-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE BAND -->
+<div class="mband">
+  <div class="mband-inner" id="mbandInner"></div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="sh rv">
+    <div>
+      <div class="slabel">Selected Works</div>
+      <h2 class="stitle">Featured <em>Photographs</em></h2>
+      <p class="sec-sub" id="gallerySub"></p>
+    </div>
+    <a href="#albums" class="valink">All Albums →</a>
+  </div>
+  <div class="gg uniform" id="hgrid"></div>
+</section>
+
+<!-- ALBUMS -->
+<section id="albums" style="background:var(--bg2)">
+  <div class="sh rv">
+    <div>
+      <div class="slabel">Collections</div>
+      <h2 class="stitle">Photo <em>Albums</em></h2>
+    </div>
+  </div>
+  <div class="ag" id="albumGrid"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="abinn">
+    <div class="abimg rv">
+      <img id="aboutImg" src="" alt="Photographer" loading="lazy">
+      <!-- Gold corner accent -->
+      <div class="ab-corner"></div>
+    </div>
+    <div class="ab-text">
+      <p class="abtag rv">The Artist</p>
+      <h2 class="abname rv d1" id="aboutName"></h2>
+      <blockquote class="abqs rv d2" id="aboutStmt"></blockquote>
+      <p class="abbio rv d3" id="aboutBio"></p>
+      <div class="abachieve rv" id="achieveList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <div>
+      <div class="flogo" id="footLogo">Lumi<em>na</em></div>
+      <p class="ftag" id="footTag"></p>
+    </div>
+    <div class="fsoc">
+      <a id="ftInsta" href="#">Instagram</a>
+      <a id="ftEmail" href="#">Email</a>
+      <a id="ftBehance" href="#">Behance</a>
+    </div>
+  </div>
+  <div class="foot-rule"></div>
+  <div class="foot-bottom">
+    <div class="fcopy" id="ftCopy"></div>
+    <div class="farch">LUMINA · CINEMATIC ARCHIVE</div>
+  </div>
+</footer>
+
+<!-- ALBUM DETAIL -->
+<div class="adet" id="adet">
+  <div class="adh">
+    <img id="adCover" src="" alt="" class="adh-img">
+    <div class="adhc">
+      <button class="adbk" id="adBack">← Back to Albums</button>
+      <p class="admeta" id="adCnt"></p>
+      <h2 class="adtit" id="adTitle"></h2>
+      <p id="adDesc" style="font-size:.72rem;color:var(--ts);margin-top:.5rem"></p>
+    </div>
+  </div>
+  <div class="adg" id="adg"></div>
+</div>
+
+<!-- MODAL -->
+<div class="mbk" id="mbk">
+  <!-- Backdrop click to close -->
+  <div class="mbk-bd" id="mbkBd"></div>
+  <div class="modal" id="modal">
+
+    <!-- Left: image pane -->
+    <div class="mis">
+      <img id="mImg" class="mis-img" src="" alt="">
+      <div class="mig" id="mGrad"></div>
+      <!-- Vignette -->
+      <div class="mis-vig"></div>
+      <!-- Prev / Next arrows on image -->
+      <button class="mia mprev" id="mImgPrev">&#8592;</button>
+      <button class="mia mnext" id="mImgNext">&#8594;</button>
+      <!-- Watermark -->
+      <span class="mis-wm">LUMINA ARCHIVE</span>
+    </div>
+
+    <!-- Right: info pane -->
+    <div class="minfo">
+      <button class="mcls" id="mClose">✕</button>
+      <p class="mcat" id="mCat"></p>
+      <h3 class="mtit" id="mTit"></h3>
+      <!-- Gold divider -->
+      <div class="mgdiv"></div>
+      <div class="mdesc" id="mDesc"></div>
+      <div class="mmeta">
+        <div class="mmi"><label>Album</label><span id="mAlb"></span></div>
+        <div class="mmi"><label>Year</label><span id="mYr"></span></div>
+        <div class="mmi"><label>Camera</label><span id="mCam"></span></div>
+        <div class="mmi"><label>Location</label><span id="mLoc"></span></div>
+      </div>
+      <!-- Footer: ref + counter -->
+      <div class="mfoot">
+        <span class="mref" id="mRef"></span>
+        <span class="mcount" id="mCount"></span>
+      </div>
+      <div class="mnav">
+        <button class="mnavb" id="mPrev">← Prev</button>
+        <button class="mnavb" id="mNext">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+</body>
+</html>

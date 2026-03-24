@@ -1,0 +1,691 @@
+{
+  "creds": {
+    "user": "admin",
+    "pass": "lumina2025"
+  },
+  "global": {
+    "logo": "LUMINA",
+    "tagline": "Cinematic Photography",
+    "copy": "© 2025 Elena Vasquez. All rights reserved.",
+    "insta": "https://instagram.com/",
+    "email": "hello@lumina.photo",
+    "behance": "",
+    "accent": "#c9a84c",
+    "grain": true
+  },
+  "about": {
+    "name": "RISHAV RAJ",
+    "stmt": "Light is not just illumination — it is the language through which the world confesses its secrets.",
+    "bio": "A cinematic photographer based between Madrid and Tokyo. Her work explores the interstitial moments between movement and stillness — the breath before a wave breaks, the precise instant when ordinary light becomes extraordinary. Her photographs have been exhibited across three continents.",
+    "img": "assets/photos/portraits/DSC_0401.jpg",
+    "ach": ""
+  },
+
+  "cfg": {
+
+    "_help": {
+      "layout":          "Grid style: 'uniform' | 'masonry' | 'editorial'",
+      "columns":         "Number of columns in the grid (2–6)",
+      "cardAspect":      "Card shape: '4/3' | '1/1' | '3/4' | '16/9' | 'free'",
+      "gapPx":           "Space between cards in pixels (0–40)",
+      "photosShown":     "How many photos appear on the homepage grid (4–24)",
+      "hoverIntensity":  "Hover zoom/lift effect strength (1–5)",
+      "showTitles":      "Show title + album on hover: true | false",
+      "manualOrder":     "Use the order defined in gridOrder below: true | false",
+      "autoAddNew":      "Auto-append newly registered photos at end: true | false",
+      "sliderAutoplay":  "Slider plays automatically: true | false",
+      "sliderIntervalSec": "Seconds between auto-slide transitions (2–15)",
+      "gridOrder":       "Array of {id, span} — controls order and size of each card. span options: '1-1' (normal) | '2-1' (wide) | '1-2' (tall) | '2-2' (large) | '3-1' (full row)"
+    },
+
+    "layout":          "uniform",
+    "columns":         3,
+    "cardAspect":      "4/3",
+    "gapPx":           12,
+    "photosShown":     12,
+    "hoverIntensity":  3,
+    "showTitles":      true,
+    "manualOrder":     true,
+    "autoAddNew":      false,
+    "sliderAutoplay":  true,
+    "sliderIntervalSec": 5,
+
+    "gridOrder": [
+      { "id": "p001", "span": "1-1" },
+      { "id": "p004", "span": "1-1" },
+      { "id": "p006", "span": "1-1" },
+      { "id": "p005", "span": "1-1" },
+      { "id": "p015", "span": "1-1" },
+      { "id": "p008", "span": "1-1" },
+      { "id": "p003", "span": "1-1" },
+      { "id": "p007", "span": "1-1" },
+      { "id": "p020", "span": "1-1" },
+      { "id": "p010", "span": "1-1" },
+      { "id": "p011", "span": "1-1" },
+      { "id": "p009", "span": "1-1" },
+      { "id": "p002", "span": "2-1" },
+      { "id": "p012", "span": "1-2" },
+      { "id": "p013", "span": "2-2" },
+      { "id": "p014", "span": "3-1" }
+    ]
+  },
+
+  "albums": [
+    {
+      "id": "landscapes",
+      "name": "Landscapes",
+      "desc": "Vast horizons and quiet wilderness",
+      "folder": "assets/photos/landscapes",
+      "accent": "#c9a84c",
+      "gradient": "noir",
+      "bg": "#0a0a0a",
+      "textMode": "light",
+      "coverPhoto": "m201"
+    },
+    {
+      "id": "portraits",
+      "name": "Portraits",
+      "desc": "Faces, expressions, human essence",
+      "folder": "assets/photos/portraits",
+      "accent": "#d4a0a0",
+      "gradient": "warm",
+      "bg": "#0a0a0a",
+      "textMode": "light",
+      "coverPhoto": "p002"
+    },
+    {
+      "id": "events",
+      "name": "Events",
+      "desc": "Texture, form and colour untethered",
+      "folder": "assets/photos/events",
+      "accent": "#b89fd4",
+      "gradient": "dusk",
+      "bg": "#0a0a0a",
+      "textMode": "light",
+      "coverPhoto": "p001"
+    },
+    {
+      "id": "nature",
+      "name": "Nature",
+      "desc": "Intimate encounters with the wild",
+      "folder": "assets/photos/nature",
+      "accent": "#8fc9a0",
+      "gradient": "forest",
+      "bg": "#0a0a0a",
+      "textMode": "light",
+      "coverPhoto": "p005"
+    }
+  ],
+
+  "photos": [
+    {
+      "id": "p001",
+      "file": "assets/photos/events/106247 (2).jpg",
+      "title": "Infinity",
+      "album": "events",
+      "year": 2024,
+      "camera": "Leica M10",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "A vast horizon stretching beyond the frame. Riviera'26:-Rush,Rise,Revel ,cultarals @ VIT Vellore.",
+      "inSlider": true,
+      "sliderOrder": 0,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p002",
+      "file": "assets/photos/portraits/DSC_0517 (1).jpg",
+      "title": "Iris",
+      "album": "portraits",
+      "year": 2026,
+      "camera": "Nikon D5300",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "The art of watching lies within the silent depth of an eye — a window that reflects emotion, awareness, and unspoken stories. In this photo, the gaze captures more than just a moment; it holds curiosity, presence, and a quiet connection with the world beyond the frame. It reminds us that true seeing is not only about looking, but about feeling, understanding, and witnessing life as it unfolds",
+      "inSlider": true,
+      "sliderOrder": 1,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 30,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 82,
+          "h": 100
+        }
+      },
+      "verified": true
+    },
+    {
+      "id": "p003",
+      "file": "assets/photos/landscapes/IMG_20231226_175441.jpg",
+      "title": "Meridian",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2023,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "Capturing the texture of the transition. This frame documents the precise microsecond where the sky’s warmth meets the ocean's depth, turning the horizon into a cinematic line of silence that separates the airy clouds from the textured, liquid shadows below.",
+      "inSlider": true,
+      "sliderOrder": 4,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 49.02,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 98.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p004",
+      "file": "assets/photos/landscapes/vak beach.jpg",
+      "title": "Resonance",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "Stripping away the day’s noise to find the Misty Melodic. The soft, diffused clouds act as a natural low-pass filter, softening the sky’s edge and leaving only the vibrant, golden frequency of the setting sun to command the composition.",
+      "inSlider": true,
+      "sliderOrder": 7,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 49.02,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 98.04, "h": 100 }
+      },
+      "verified": true
+    },  
+    {
+      "id": "p011",
+      "file": "assets/photos/nature/sunflower.jpg",
+      "title": "Aurora",
+      "album": "nature",
+      "albumName": "nature",
+      "year": 2026,
+      "camera": "IQOO Z6 lite",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "Stripping away the day to find the Misty Melodic. The hazy, diffused light in the clouds acts as a natural low-pass filter, softening the city's edge and leaving only the vibrant, low-frequency hum of the sunflowers",
+      "inSlider": false,
+      "sliderOrder": 2,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 60,
+        "rect": { "x": 20, "y": 60, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p005",
+      "file": "assets/photos/nature/IMG_20251022_200655.jpg",
+      "title": "Nocturne",
+      "album": "nature",
+      "albumName": "Landscapes",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "An exploration of layered geometry. Each leaf acts as a visual instrument, stacking upon the next to create a dense, polyphonic composition that fills the frame with a steady, low-frequency hum of deep forest greens.",
+      "inSlider": true,
+      "sliderOrder": 2,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 49.02,
+        "y": 90,
+        "rect": { "x": 0, "y": 0, "w": 98.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p006",
+      "file": "assets/photos/landscapes/DSC_1013.jpg",
+      "title": "Ethereal",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2025,
+      "camera": "Nikon D5300",
+      "location": "Ooty, Tamil Nadu, India",
+      "desc": "Stripping away the world’s noise to find the Grand Pause. In this frame, the blue mist serves as a visual low-pass filter, leaving only the essential, skeletal forms of the trees to command the composition.",
+      "inSlider": true,
+      "sliderOrder": 3,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 50,
+        "y": 51.36,
+        "rect": { "x": 0, "y": 2.71, "w": 100, "h": 97.29 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p007",
+      "file": "assets/photos/portraits/file_00000000481061f78ead39aacbb3e46f.png",
+      "title": "Midnight Monologue",
+      "album": "portraits",
+      "albumName": "Portraits",
+      "year": 2025,
+      "camera": "Redmi 13 ",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "Where the storm meets the Soulful Solo. This composition documents the beauty of being alone but not lonely; it is a high-contrast document of a moment where the night is the only audience and the rain is the only music.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 70,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p010",
+      "file": "assets/photos/nature/river.jpg",
+      "title": "Radiant Rhythm",
+      "album": "nature",
+      "albumName": "nature",
+      "year": 2026,
+      "camera": "iPHONE 14",
+      "location": "Vellore, Tamil Nadu, India",
+      "desc": "An exploration of organic timing. The way the light pulses through the canopy and reflects off the stream’s ripples creates a rhythmic, sparkling pattern—a visual metronome for the quietest corner of the forest.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 70,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+
+    {
+      "id": "p008",
+      "file": "assets/photos/nature/rose.jpg",
+      "title": "Bleeding Ballad",
+      "album": "nature",
+      "albumName": "nature",
+      "year": 2024,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "Stripping away the garden’s noise to find the singular truth. Isolated in a world of near-total shadow, the rose stands as a solitary, high-contrast spotlight, commandingly centered like a protagonist in a private, beautiful tragedy.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p013",
+      "file": "assets/photos/nature/lili.jpg",
+      "title": "Nymphaea",
+      "album": "nature",
+      "albumName": "nature",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "Where biology meets the Grand Pause. This frame documents the absolute stillness of the afternoon, with the vibrant yellow center acting as a visual sub-woofer that grounds the delicate, airy violet melody.",
+      "inSlider": true,
+      "sliderOrder": 5,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 60,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p009",
+      "file": "assets/photos/nature/dalia.jpg",
+      "title": "Symphony of Petals",
+      "album": "nature",
+      "albumName": "nature",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Thiruvananthapuram, Kerala, India",
+      "desc": "A close-up study of a dahlia in bloom. The intricate layers of petals unfold like the movements of a symphony, each curve and fold contributing to a harmonious whole. The soft, natural light accentuates the delicate textures and vibrant colors, creating a visual melody that celebrates the beauty of nature’s design.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 10,
+        "y": 45,
+        "rect": { "x": 0, "y": 0, "w": 20.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p012",
+      "file": "assets/photos/nature/web.jpg",
+      "title": "Prism of the Parlor",
+      "album": "nature",
+      "albumName": "nature",
+      "year": 2026,
+      "camera": "POCO F7",
+      "location": "Vellore, Tamil Nadu, India",
+      "desc": "mix of Noir and Optics. This portrait focuses on the way the sun turns the spider’s exoskeleton into a semi-transparent prism. It mirrors the Glow of stage lasers, where the biology of the predator mixes with the physics of the golden light. It is a visual representation of a Synth-Pad—atmospheric, glowing, and layered with a subtle, organic distortion.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 60,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p014",
+      "file": "assets/photos/events/sunidhi chuhan.jpg",
+      "title": "Unplugged Icon",
+      "album": "events",
+      "year": 2026,
+      "camera": "POCO F7",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "This frame captures the Crescendo. Just as a Sunidhi anthem builds from a low, rhythmic hum into a stadium-shaking chorus, the light here builds from the deep, silent blacks of the stage floor to the brilliant, ivory peak of the spotlight. It is a visual translation of a high-decibel vocal—sharp, piercing, and impossible to ignore.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 10,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p015",
+      "file": "assets/photos/events/106767.jpg",
+      "title": "Pulse",
+      "album": "events",
+      "year": 2026,
+      "camera": "POCO F7",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "Hands up, screens on, and hearts beating to the same bassline. Another legendary night in the VIT archives, defined by golden lights and a crowd that refuses to go quiet.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p016",
+      "file": "assets/photos/events/pradeep.jpg",
+      "title": "Spotlight on the Soul",
+      "album": "events",
+      "year": 2026,
+      "camera": "IQOO NEO 10R",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "A cinematic perspective of the pro-show. The crushed blacks of the crowd and the surrounding arena turn the performance into a surreal, dreamlike moment where the only thing that exists is the light and the music.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 70,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p017",
+      "file": "assets/photos/events/fireworks.jpg",
+      "title": "Gold Dust and Iron Grids",
+      "album": "events",
+      "year": 2026,
+      "camera": "IQOO NEO 10R",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "A study in textures. The rigid, cold geometry of the stage trusses serves as the anchor for a liquid, chaotic eruption of gold. It is the visual representation of an alchemical peak—where music, crowd energy, and oxygen are converted into a blinding, white-hot physical form.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p018",
+      "file": "assets/photos/events/sunidhi.jpg",
+      "title": "Noir Melodia",
+      "album": "events",
+      "year": 2026,
+      "camera": "POCO F7",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "Stripping away the chaos to find the icon. This minimalist, high-impact composition treats the stage like a film noir set. The scattered blue lights above look like a shattered constellation, leaving Sunidhi as the only grounding element in a world made of smoke, mirrors, and world-class vocals.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p019",
+      "file": "assets/photos/events/day 1 fire.jpg",
+      "title": "Pixels and Pyros",
+      "album": "events",
+      "year": 2026,
+      "camera": "POCO F7",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "An exploration of the dual reality of a modern concert. The massive LED screens broadcast a high-definition soul while the stage physically erupts with golden fountains of fire. It captures a state of technological fever—where the heat on your face and the light on your screen merge into a singular, overwhelming sensory overload.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p020",
+      "file": "assets/photos/events/b&w.jpg",
+      "title": "00:00:01",
+      "album": "events",
+      "year": 2026,
+      "camera": "POCO F7",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "Color tells you what happened; Black and White tells you how it felt. At Riviera, amidst the lasers and the noise, there is a quiet, rhythmic surrender that only the shadows can see.",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 60,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p021",
+      "file": "assets/photos/events/trrane.jpg",
+      "title": "Luminous Blueprint",
+      "album": "events",
+      "year": 2026,
+      "camera": "IQOO NEO 10R",
+      "location": "VIT Vellore, Tamil Nadu, India",
+      "desc": "Approaching the concert scene through an atmospheric lens. This description emphasizes the density of the haze and how the light washes over the crowd in waves, transforming a specific event into a universal, timeless moment of shared connection..",
+      "inSlider": false,
+      "sliderOrder": 1,
+      "inGrid": true,
+      "gridIndex": 1,
+      "crop": {
+        "x": 44.32,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 88.63, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p023",
+      "file": "assets/photos/landscapes/sunst.jpg",
+      "title": "Gloaming",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2023,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "As the sun dips below the horizon, the sky erupts in a final display of amber light. This wide-angle shot captures the intersection of day and night, where the restless clouds meet the steady, silent palms of the south.",
+      "inSlider": true,
+      "sliderOrder": 6,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 49.02,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 98.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p024",
+      "file": "assets/photos/landscapes/wf.jpg",
+      "title": "Heartbeat of the Hills",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Meenmutty, Kerala, India",
+      "desc": "Stripping away the noise of the trek to focus on the flow. This composition highlights the elegant, braided streams of the waterfall as they find the path of least resistance through the rugged granite cliffs.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 49.02,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 98.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p025",
+      "file": "assets/photos/landscapes/meenm.jpg",
+      "title": "Nature’s Rhythms",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Meenmutty, Kerala, India",
+      "desc": "Where the forest breathes and the water speaks. A quiet moment along a jungle stream, capturing the timeless endurance of the rocks against the gentle, persistent flow of the mountain water.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 49.02,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 98.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p026",
+      "file": "assets/photos/portraits/bch.jpg",
+      "title": "Heaven’s Radiance",
+      "album": "portraits",
+      "albumName": "Portraits",
+      "year": 2024,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "A spectacular display of light and shadow on the coast. The sun breaks through a heavy cloud bank, casting divine rays across the sky while two figures stand in silhouette, reflected in the mirror-like finish of the receding tide.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 50,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p027",
+      "file": "assets/photos/portraits/wrm.jpg",
+      "title": "Salt, Sand, and Sun",
+      "album": "portraits",
+      "albumName": "Portraits",
+      "year": 2025,
+      "camera": "IQOO Z6 lite",
+      "location": "Varkala, Kerala, India",
+      "desc": "Focused on the raw elements of the coast. From the messy footprints in the foreground to the white foam of the crashing tide, this image captures the restless energy of the sea during the golden hour.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 40,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    },
+    {
+      "id": "p029",
+      "file": "assets/photos/landscapes/kan.jpg",
+      "title": "Sunrise at the Land's End",
+      "album": "landscapes",
+      "albumName": "Landscapes",
+      "year": 2024,
+      "camera": "IQOO Z6 lite",
+      "location": "Kanniyakumari,Tamil Nadu,India",
+      "desc": "A breathtaking dawn at Kanyakumari, where the silhouette of a traditional shrine stands guard over the meeting of the oceans. The sky paints a vibrant canvas of orange and gold as the first light of day touches the southern tip of India.",
+      "inSlider": false,
+      "sliderOrder": 0,
+      "inGrid": false,
+      "gridIndex": null,
+      "crop": {
+        "x": 20,
+        "y": 80,
+        "rect": { "x": 0, "y": 0, "w": 50.04, "h": 100 }
+      },
+      "verified": true
+    }
+  ],
+
+  "_scanManifest": {
+    "lastScan": null,
+    "knownFiles": []
+  },
+  "themes": {}
+}
