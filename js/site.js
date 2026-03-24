@@ -32,7 +32,7 @@ function observeRv(){
 /* ── LOAD ────────────────────────────────── */
 async function loadData(){
   try{
-    const r=await fetch('data.json?v='+Date.now());
+    const r=await fetch('data.json');
     if(!r.ok)throw 0;
     D=await r.json();
   }catch(e){
@@ -46,6 +46,15 @@ async function loadData(){
 }
 
 function init(){
+  // Preload first hero image immediately — highest priority resource
+  const sliderPhotos=(D.photos||[]).filter(p=>p.inSlider)
+    .sort((a,b)=>(a.sliderOrder||0)-(b.sliderOrder||0));
+  if(sliderPhotos.length){
+    const lnk=document.createElement('link');
+    lnk.rel='preload';lnk.as='image';lnk.href=sliderPhotos[0].file;
+    lnk.fetchPriority='high';
+    document.head.appendChild(lnk);
+  }
   applyGlobal();
   applyAbout();
   renderSlider();
@@ -164,6 +173,8 @@ function renderSlider(){
         src="${esc(p.file)}"
         alt="${esc(p.title)}"
         loading="${isFirst?'eager':'lazy'}"
+        decoding="${isFirst?'sync':'async'}"
+        fetchpriority="${isFirst?'high':'low'}"
         style="object-position:${bpos}"
         onerror="this.style.opacity='.1'">
       <div class="sov"></div>
@@ -214,10 +225,18 @@ function goSlide(dir){
   $('track').style.transform=`translateX(-${sIdx*100}%)`;
   updScnt(sIdx,slides.length);
 
+  // Eagerly load current slide image
+  const curImg=slides[sIdx].querySelector('.slide-img-bg');
+  if(curImg){curImg.loading='eager';}
+
+  // Preload the one after next so it's ready
+  const preIdx=(sIdx+1)%slides.length;
+  const preImg=slides[preIdx].querySelector('.slide-img-bg');
+  if(preImg&&preImg.loading==='lazy'){preImg.loading='eager';}
+
   // Trigger Ken-Burns on incoming slide
   setTimeout(()=>{
-    const inImg=slides[sIdx].querySelector('.slide-img-bg');
-    if(inImg){inImg.style.transform='scale(1.07)';setTimeout(()=>inImg.style.transform='scale(1)',30);}
+    if(curImg){curImg.style.transform='scale(1.07)';setTimeout(()=>curImg.style.transform='scale(1)',30);}
   },20);
 
   startSlider(slides.length);
@@ -321,12 +340,23 @@ function makeCard(p,i,span,aspect,cols,layout){
   }
 
   el.innerHTML=`
-    <img class="gi-img" src="${esc(p.file)}" alt="${esc(p.title)}" loading="lazy"
+    <img class="gi-img" src="${esc(p.file)}" alt="${esc(p.title)}"
+      loading="${i<3?'eager':'lazy'}"
+      decoding="async"
+      fetchpriority="${i===0?'high':'auto'}"
       style="object-position:${ox} ${oy}" onerror="this.style.opacity='.12'">
     <div class="gio">
       <p class="git">${esc(p.title)}</p>
       <p class="gic">${esc(alb.name||p.album||'')}</p>
     </div>`;
+
+  // Fade in image + kill shimmer once decoded
+  const img=el.querySelector('.gi-img');
+  if(img){
+    const reveal=()=>{img.setAttribute('data-loaded','1');el.classList.add('loaded');};
+    if(img.complete)reveal();
+    else img.addEventListener('load',reveal,{once:true});
+  }
   return el;
 }
 
@@ -350,7 +380,7 @@ function renderAlbums(){
     const el=document.createElement('div');
     el.className='ac rv';el.style.transitionDelay=`${i*.1}s`;
     el.innerHTML=`
-      <img class="ac-img" src="${esc(cover)}" alt="${esc(a.name)}" loading="lazy"
+      <img class="ac-img" src="${esc(cover)}" alt="${esc(a.name)}" loading="lazy" decoding="async"
         style="object-position:${ox} ${oy}" onerror="this.style.opacity='.18'">
       <div class="acb">
         <p class="acn">${photos.length} Photographs</p>

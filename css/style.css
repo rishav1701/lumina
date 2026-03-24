@@ -328,6 +328,9 @@ nav.sc .nav-rule { opacity: 1; }
 
 /* ── SECTIONS ───────────────────────────────── */
 section { padding: 5rem 5vw; }
+/* Skip rendering off-screen sections until they near the viewport */
+#albums { content-visibility: auto; contain-intrinsic-size: 0 600px; }
+#about  { content-visibility: auto; contain-intrinsic-size: 0 500px; }
 .sh { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 3.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,.05); }
 .stitle { font-family: var(--fd); font-size: clamp(1.8rem,3.5vw,3rem); font-weight: 300; }
 .stitle em { color: var(--acc); font-style: italic; }
@@ -349,11 +352,37 @@ section { padding: 5rem 5vw; }
   min-height: 120px; cursor: none;
   transition: transform .62s var(--spring), box-shadow .62s var(--spring);
 }
+
+/* Skeleton shimmer while image loads */
+.gi::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.03) 0%,
+    rgba(255,255,255,.07) 40%,
+    rgba(255,255,255,.03) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+  pointer-events: none;
+}
+/* Remove shimmer once image has loaded */
+.gi.loaded::before { display: none; }
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .gi-img {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
-  transition: transform .72s var(--ease), filter .5s;
+  transition: transform .72s var(--ease), filter .5s, opacity .4s;
   filter: brightness(.82) saturate(.88);
+  opacity: 0;
 }
+/* Fade in once decoded */
+.gi-img.vis, .gi-img[data-loaded] { opacity: 1; }
 .gi:hover { transform: scale(.975) translateY(-6px); box-shadow: var(--lift); z-index: 2; }
 .gi:hover .gi-img { transform: scale(1.06); filter: brightness(.52) saturate(1.12); }
 
