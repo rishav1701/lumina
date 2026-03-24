@@ -120,7 +120,7 @@
   "photos": [
     {
       "id": "p001",
-      "file": "assets/photos/events/106247 (2).jpg",
+      "file": "assets/photos/events/106247.webp",
       "title": "Infinity",
       "album": "events",
       "year": 2024,
@@ -140,7 +140,7 @@
     },
     {
       "id": "p002",
-      "file": "assets/photos/portraits/DSC_0517 (1).jpg",
+      "file": "assets/photos/portraits/DSC_0401.webp",
       "title": "Iris",
       "album": "portraits",
       "year": 2026,
@@ -165,7 +165,7 @@
     },
     {
       "id": "p003",
-      "file": "assets/photos/landscapes/IMG_20231226_175441.jpg",
+      "file": "assets/photos/landscapes/IMG_20231226_175441.webp",
       "title": "Meridian",
       "album": "landscapes",
       "albumName": "Landscapes",
@@ -186,7 +186,7 @@
     },
     {
       "id": "p004",
-      "file": "assets/photos/landscapes/vak beach.jpg",
+      "file": "assets/photos/landscapes/vak beach.webp",
       "title": "Resonance",
       "album": "landscapes",
       "albumName": "Landscapes",
@@ -207,7 +207,7 @@
     },  
     {
       "id": "p011",
-      "file": "assets/photos/nature/sunflower.jpg",
+      "file": "assets/photos/nature/sunflower.webp",
       "title": "Aurora",
       "album": "nature",
       "albumName": "nature",
@@ -228,7 +228,7 @@
     },
     {
       "id": "p005",
-      "file": "assets/photos/nature/IMG_20251022_200655.jpg",
+      "file": "assets/photos/nature/IMG_20251022_200655.webp",
       "title": "Nocturne",
       "album": "nature",
       "albumName": "Landscapes",
@@ -249,7 +249,7 @@
     },
     {
       "id": "p006",
-      "file": "assets/photos/landscapes/DSC_1013.jpg",
+      "file": "assets/photos/landscapes/DSC_1013.webp",
       "title": "Ethereal",
       "album": "landscapes",
       "albumName": "Landscapes",
@@ -270,7 +270,7 @@
     },
     {
       "id": "p007",
-      "file": "assets/photos/portraits/file_00000000481061f78ead39aacbb3e46f.png",
+      "file": "assets/photos/portraits/file_00000000481061f78ead39aacbb3e46f.webp",
       "title": "Midnight Monologue",
       "album": "portraits",
       "albumName": "Portraits",
@@ -291,7 +291,7 @@
     },
     {
       "id": "p010",
-      "file": "assets/photos/nature/river.jpg",
+      "file": "assets/photos/nature/river.webp",
       "title": "Radiant Rhythm",
       "album": "nature",
       "albumName": "nature",
@@ -313,7 +313,7 @@
 
     {
       "id": "p008",
-      "file": "assets/photos/nature/rose.jpg",
+      "file": "assets/photos/nature/rose.webp",
       "title": "Bleeding Ballad",
       "album": "nature",
       "albumName": "nature",
@@ -334,7 +334,7 @@
     },
     {
       "id": "p013",
-      "file": "assets/photos/nature/lili.jpg",
+      "file": "assets/photos/nature/lili.webp",
       "title": "Nymphaea",
       "album": "nature",
       "albumName": "nature",
@@ -355,7 +355,7 @@
     },
     {
       "id": "p009",
-      "file": "assets/photos/nature/dalia.jpg",
+      "file": "assets/photos/nature/dalia.webp",
       "title": "Symphony of Petals",
       "album": "nature",
       "albumName": "nature",
@@ -376,7 +376,7 @@
     },
     {
       "id": "p012",
-      "file": "assets/photos/nature/web.jpg",
+      "file": "assets/photos/nature/web.webp",
       "title": "Prism of the Parlor",
       "album": "nature",
       "albumName": "nature",
@@ -397,7 +397,7 @@
     },
     {
       "id": "p014",
-      "file": "assets/photos/events/sunidhi chuhan.jpg",
+      "file": "assets/photos/events/sunidhi chuhan.webp",
       "title": "Unplugged Icon",
       "album": "events",
       "year": 2026,
@@ -417,7 +417,7 @@
     },
     {
       "id": "p015",
-      "file": "assets/photos/events/106767.jpg",
+      "file": "assets/photos/events/106767.webp",
       "title": "Pulse",
       "album": "events",
       "year": 2026,
@@ -437,7 +437,7 @@
     },
     {
       "id": "p016",
-      "file": "assets/photos/events/pradeep.jpg",
+      "file": "assets/photos/events/pradeep.webp",
       "title": "Spotlight on the Soul",
       "album": "events",
       "year": 2026,
@@ -457,7 +457,7 @@
     },
     {
       "id": "p017",
-      "file": "assets/photos/events/fireworks.jpg",
+      "file": "assets/photos/events/fireworks.webp",
       "title": "Gold Dust and Iron Grids",
       "album": "events",
       "year": 2026,
@@ -477,7 +477,7 @@
     },
     {
       "id": "p018",
-      "file": "assets/photos/events/sunidhi.jpg",
+      "file": "assets/photos/events/sunidhi.webp",
       "title": "Noir Melodia",
       "album": "events",
       "year": 2026,
@@ -497,7 +497,7 @@
     },
     {
       "id": "p019",
-      "file": "assets/photos/events/day 1 fire.jpg",
+      "file": "assets/photos/events/day 1 fire.webp",
       "title": "Pixels and Pyros",
       "album": "events",
       "year": 2026,
@@ -517,7 +517,7 @@
     },
     {
       "id": "p020",
-      "file": "assets/photos/events/b&w.jpg",
+      "file": "assets/photos/events/b&w.webp",
       "title": "00:00:01",
       "album": "events",
       "year": 2026,
@@ -537,7 +537,7 @@
     },
     {
       "id": "p021",
-      "file": "assets/photos/events/trrane.jpg",
+      "file": "assets/photos/events/trrane.webp",
       "title": "Luminous Blueprint",
       "album": "events",
       "year": 2026,
@@ -557,7 +557,7 @@
     },
     {
       "id": "p023",
-      "file": "assets/photos/landscapes/sunst.jpg",
+      "file": "assets/photos/landscapes/sunst.webp",
       "title": "Gloaming",
       "album": "landscapes",
       "albumName": "Landscapes",
@@ -578,7 +578,7 @@
     },
     {
       "id": "p024",
-      "file": "assets/photos/landscapes/wf.jpg",
+      "file": "assets/photos/landscapes/wf.webp",
       "title": "Heartbeat of the Hills",
       "album": "landscapes",
       "albumName": "Landscapes",
@@ -599,7 +599,7 @@
     },
     {
       "id": "p025",
-      "file": "assets/photos/landscapes/meenm.jpg",
+      "file": "assets/photos/landscapes/meenm.webp",
       "title": "Nature’s Rhythms",
       "album": "landscapes",
       "albumName": "Landscapes",
@@ -620,7 +620,7 @@
     },
     {
       "id": "p026",
-      "file": "assets/photos/portraits/bch.jpg",
+      "file": "assets/photos/portraits/bch.webp",
       "title": "Heaven’s Radiance",
       "album": "portraits",
       "albumName": "Portraits",
@@ -641,7 +641,7 @@
     },
     {
       "id": "p027",
-      "file": "assets/photos/portraits/wrm.jpg",
+      "file": "assets/photos/portraits/wrm.webp",
       "title": "Salt, Sand, and Sun",
       "album": "portraits",
       "albumName": "Portraits",
@@ -662,7 +662,7 @@
     },
     {
       "id": "p029",
-      "file": "assets/photos/landscapes/kan.jpg",
+      "file": "assets/photos/landscapes/kan.webp",
       "title": "Sunrise at the Land's End",
       "album": "landscapes",
       "albumName": "Landscapes",
